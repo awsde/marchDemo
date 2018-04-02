@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VueTest</title>
+    <link rel="stylesheet" href="if.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+	<div id="vue-app">
+		<h1>v-if条件</h1>
+		<button v-on:click="error=!error">Error</button>
+		<button v-on:click="success=!success">Success</button>
+		<!-- <p v-if="error">网络连接错误404</p>
+		<p v-else-if="success">网络连接成功200</p> -->
+		<p v-show="error">网络连接错误404</p>
+		<p v-show="success">网络连接成功200</p>
+	</div>	
+<script src="if.js"></script>
+</body>
+</html>
+

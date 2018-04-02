@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VueTest</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+<!--vue-app是根容器 -->
+    <div id="vue-app">
+        <p>{{greet('mor')}}</p>
+        <p>{{name}}</p>
+        <a v-bind:href=" website">百度</a>
+        <input type="text" v-bind:value="name">
+         <p v-html="websiteTag"></p>
+        <!--{{websiteTag}}-->
+        <!-- v-bind绑定 -->
+    <!-- {{模板语法}}   熟悉没有（），方法有（）-->
+</div>
+<script src="app.js"></script>
+</body>
+</html>

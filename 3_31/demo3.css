@@ -1,0 +1,13 @@
+/*<!-- 图片路径获取有问题！！！！ -->*/
+#bag{
+	width:200px; 
+	height:800px;
+	padding-left: 40%;
+}
+#controls{
+	width: 160px;
+	margin: 0 auto;
+}
+#controls button{
+	margin-left: 10px;
+}

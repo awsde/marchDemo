@@ -1,0 +1,27 @@
+.block-1{
+    box-sizing: border-box;
+    border: solid 2px blue;
+    background: tomato;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    width: 30px;
+    height: 30px;
+}
+.block-2{
+    box-sizing: border-box;
+    border: dotted 2px blue;
+    background: #1ebc30;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    width: 60px;
+    height: 30px;
+}
+.block-3{
+    box-sizing: border-box;
+    border: solid 2px blue;
+    background: #8a8a8a;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    width: 120px;
+    height: 30px;
+}

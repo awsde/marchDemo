@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VueTest</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+	<div id="vue-app">
+		<h1>Events</h1>
+		<!-- <button v-on:click="age++">涨一岁</button> -->
+		<!-- <button v-on:click="age">减一岁</button> -->
+		<button @click.once="add(1)">涨一岁</button>
+		<!-- .once只有一次点击有效 -->
+		<button v-on:dblclick="add(10)">涨涨十岁</button>
+		<button v-on:click="sub(1)">减一岁</button>
+		<button @dblclick="sub(10)">减减十岁</button>
+		<p>my age is {{age}}</p>
+		<div id="canves"v-on:mousemove="updateXY">
+			{{x}},{{y}} 
+			<!-- <span @mousemove="stopMove">-Stop Moving- </span> -->
+			<!-- js中阻止冒泡事件的方法 -->
+			<span @mousemove.stop="">--Stop Moving-- </span>
+			<!-- vue中方法（修饰符）-->
+		</div>
+		<a @click.prevent="alert()" href="https://www.baidu.com"> 
+			The new web
+		</a>
+		<!-- prevent阻止默认事件 -->
+	</div>
+<script src="appindex.js"></script>
+</body>
+</html>
+

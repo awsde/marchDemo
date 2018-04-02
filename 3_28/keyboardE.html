@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VueTest</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+	<div id="vue-app">
+	<h1>双向数据绑定/input/select/textarea</h1>
+	<label>姓名:</label>
+	<!-- <input ref="name" type="text" @keyup="logName"> -->
+	<input ref="name" type="text" v-model="name">
+	<span>{{name}}</span>
+	<label>年龄:</label>
+	<!-- <input ref="age" type="text" @keyup="logAge"> -->
+	<input ref="age" type="text" v-model="age">		
+	<span>{{age}}</span>
+	</div>
+<script src="keyboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VueTest</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+	<div id="vue-app">
+		<h1>v-for循环</h1>
+		<!-- 数组下标 -->
+		<!-- {{charaters[0]}}
+		{{charaters[1]}}
+		{{charaters[2]}} -->
+		<!-- 数组遍历 -->
+		<ul>
+			<li v-for="charater in charaters">{{charater}}</li>
+		</ul>
+
+
+		<ul>
+			<li v-for="user in users">
+				{{user.name}}-{{user.age}}
+			</li>
+		</ul>
+
+		<ul>
+			<li v-for="(user,index) in users">
+				{{index+1}}.{{user.name}}-{{user.age}}
+			</li>
+		</ul>
+		<table border="1">
+			<tr>
+				<th>序号</th>
+				<th>name</th>
+				<th>age</th>
+			</tr>
+			<tr v-for="(user,index) in users">
+				<th>{{index+1}}</th>
+				<th>{{user.name}}</th>
+				<th>{{user.age}}</th>
+			</tr>
+		</table>
+		<!-- <div v-for="(user,index) in users">
+			<h3>{{index+1}}.{{user.name}}</h3>
+			<p>Age-{{user.age}}</p>
+		</div> -->
+		<template v-for="(user,index) in users">
+			<h3>{{index+1}}.{{user.name}}</h3>
+			<p>Age-{{user.age}}</p>
+		</template>
+
+		<template v-for="(user,index) in users">
+			<div v-for="(val,key) in user">
+				<p>{{key}}-{{val}}</p>
+			</div>
+		</template>
+	</div>	
+<script src="for.js"></script>
+</body>
+</html>
+

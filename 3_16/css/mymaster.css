@@ -1,0 +1,22 @@
+.ui.vertical.basic.segment.back{
+    height: 700px;
+    background: url('../img/banner.jpg');
+    background-size: cover;
+    background-repeat:no-repeat ;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.ui.inverted.center.aligned.header.slogan{
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.ui.red.circular.button{
+    width: 220px;
+}
+.ui.header.logo{
+    font-size: 30px;
+    color: rgb(196,196,196);
+}
